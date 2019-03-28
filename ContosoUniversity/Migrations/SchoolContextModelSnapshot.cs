@@ -68,7 +68,6 @@ namespace ContosoUniversity.Migrations
                         .IsConcurrencyToken()
                         .ValueGeneratedOnAddOrUpdate();
 
-
                     b.Property<DateTime>("StartDate");
 
                     b.HasKey("DepartmentID");

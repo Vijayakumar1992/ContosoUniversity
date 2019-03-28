@@ -7,18 +7,18 @@ namespace ContosoUniversity.Migrations
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropColumn(
-                name: "RowVersion",
-                table: "Department");
-        }
-
-        protected override void Down(MigrationBuilder migrationBuilder)
-        {
             migrationBuilder.AddColumn<byte[]>(
                 name: "RowVersion",
                 table: "Department",
                 rowVersion: true,
                 nullable: true);
+        }
+
+        protected override void Down(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.DropColumn(
+                name: "RowVersion",
+                table: "Department");
         }
     }
 }
