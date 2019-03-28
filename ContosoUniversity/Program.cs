@@ -5,6 +5,8 @@ using Microsoft.Extensions.DependencyInjection;   // CreateScope
 using Microsoft.Extensions.Logging;
 using System;
 
+
+
 namespace ContosoUniversity
 {
     public class Program
@@ -21,7 +23,7 @@ namespace ContosoUniversity
                 {
                     var context = services.GetRequiredService<SchoolContext>();
                     // using ContosoUniversity.Data; 
-                    DbInitializer.Initialize(context);
+                    Data.DbInitializer.Initialize(context);
                 }
                 catch (Exception ex)
                 {
