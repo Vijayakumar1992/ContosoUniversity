@@ -35,7 +35,6 @@ body {
     background-size: cover;
     height: 260px;
     color: red;
-    /*font-family: @import("");*/
     vertical-align: middle;
     display: flex;
     align-items: center;
