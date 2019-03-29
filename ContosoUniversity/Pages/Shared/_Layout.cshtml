@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Contoso University</title>
 
+    @*will get the google font changed*@
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+
+
+
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
         <link rel="stylesheet" href="~/css/site.css" />
@@ -16,7 +21,9 @@
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
     </environment>
 </head>
-<body>
+<body class="backgroundColor1">
+
+
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -48,7 +55,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; 2019 - Contoso University</p>
+            <p>&copy; 2019 - David Aruldass - Contactme@gmail.com</p>
         </footer>
     </div>
 

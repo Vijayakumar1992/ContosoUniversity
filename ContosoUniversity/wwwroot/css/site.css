@@ -1,8 +1,10 @@
 /* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification 
 for details on configuring this project to bundle and minify static web assets. */
 body {
+    font-family: 'Crimson Text', serif;
     padding-top: 50px;
     padding-bottom: 20px;
+    font-size:large;
 }
 
 /* Wrapping element */
@@ -28,6 +30,35 @@ body {
     margin: 15px;
 }
 
+.backgroundImage {
+    background-image: url("/images/homeimage2.jpeg");
+    background-size: cover;
+    height: 260px;
+    color: red;
+    /*font-family: @import("");*/
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.backgroundColor{
+    background-color: cadetblue;
+}
+
+.fontSize {
+    font-size: 55px;
+}
+
+.backgroundColor1{
+    background-color: lightgrey;
+}
+
+
+.spaceIt {
+    padding-right: 25px;
+   
+}
 /* Hide/rearrange for smaller screens */
 @media screen and (max-width: 767px) {
     /* Hide captions */
@@ -35,3 +66,5 @@ body {
         display: none;
     }
 }
+
+
